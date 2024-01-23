@@ -13,7 +13,7 @@ const PersonalPage = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          `https://react-blog-flame-one.vercel.app/personalPage/${username}`
+          `https://react-blog-pxkwa4oc8-willas-projects-8b6efd89.vercel.app/personalPage/${username}`
         );
         const result = await response.json();
 

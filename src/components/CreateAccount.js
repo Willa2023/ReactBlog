@@ -19,7 +19,7 @@ const CreateAccount = ({ show, handleClose }) => {
   const handleCreateAccountClick = async (e) => {
     e.preventDefault();
     let response = await fetch(
-      "https://react-blog-flame-one.vercel.app/createAccount",
+      "https://react-blog-pxkwa4oc8-willas-projects-8b6efd89.vercel.app/createAccount",
       {
         method: "POST",
         headers: {

@@ -21,7 +21,7 @@ const UpdateArticle = () => {
   const fetchExistingArticle = async () => {
     try {
       const response = await fetch(
-        `https://react-blog-flame-one.vercel.app/getArticle/${articleId}`
+        `https://react-blog-pxkwa4oc8-willas-projects-8b6efd89.vercel.app/getArticle/${articleId}`
       );
       const result = await response.json();
 
@@ -53,7 +53,7 @@ const UpdateArticle = () => {
     }
 
     let response = await fetch(
-      `https://react-blog-flame-one.vercel.app/updateArticle/${articleId}`,
+      `https://react-blog-pxkwa4oc8-willas-projects-8b6efd89.vercel.app/updateArticle/${articleId}`,
       {
         method: "PUT",
         headers: {
