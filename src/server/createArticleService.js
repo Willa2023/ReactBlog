@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const db = mysql.createConnection({
-  host: "reactblogdatabase.cf8sld5urrxi.ap-southeast-2.rds.amazonaws.com",
-  user: "admin",
-  password: "willawilla",
-  database: "message",
+  host: dbHost,
+  user: dbUser,
+  password: dbPassword,
+  database: dbName,
 });
 
 module.exports = async (req, res) => {
