@@ -22,18 +22,21 @@ const CreateArticle = () => {
       console.error("Username not available");
       return;
     }
-    let response = await fetch("http://localhost:3000/createArticle", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify({
-        title,
-        topic,
-        author: username,
-        content,
-      }),
-    });
+    let response = await fetch(
+      "https://react-blog-flame-one.vercel.app/createArticle",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify({
+          title,
+          topic,
+          author: username,
+          content,
+        }),
+      }
+    );
     let result = await response.json();
     if (result.code === 200) {
       setStatus({ success: true, message: "Article created successfully" });
