@@ -9,7 +9,7 @@ const ListByTopic = () => {
     const fetchArticlesByTopic = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5005/listByTopic/${topic}`
+          `http://localhost:3000/listByTopic/${topic}`
         );
         console.log(response);
         if (!response.ok) {

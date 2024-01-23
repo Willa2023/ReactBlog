@@ -15,7 +15,7 @@ const ShowArticle = () => {
     const fetchArticleData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5005/showArticle/${title}`
+          `http://localhost:3000/showArticle/${title}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

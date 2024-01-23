@@ -18,7 +18,7 @@ const CreateAccount = ({ show, handleClose }) => {
 
   const handleCreateAccountClick = async (e) => {
     e.preventDefault();
-    let response = await fetch("http://localhost:5003/createAccount", {
+    let response = await fetch("http://localhost:3000/createAccount", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

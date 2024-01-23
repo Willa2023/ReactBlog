@@ -10,7 +10,7 @@ const ListByTitle = () => {
     const fetchArticlesByTitle = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5005/listByTitle/${title}`
+          `http://localhost:3000/listByTitle/${title}`
         );
         console.log(response);
         if (!response.ok) {

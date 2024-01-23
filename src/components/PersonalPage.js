@@ -13,7 +13,7 @@ const PersonalPage = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5005/personalPage/${username}`
+          `http://localhost:3000/personalPage/${username}`
         );
         const result = await response.json();
 

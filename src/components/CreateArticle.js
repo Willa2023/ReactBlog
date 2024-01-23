@@ -22,7 +22,7 @@ const CreateArticle = () => {
       console.error("Username not available");
       return;
     }
-    let response = await fetch("http://localhost:5005/createArticle", {
+    let response = await fetch("http://localhost:3000/createArticle", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
