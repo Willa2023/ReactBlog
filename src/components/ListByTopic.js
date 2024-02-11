@@ -9,7 +9,7 @@ const ListByTopic = () => {
     const fetchArticlesByTopic = async () => {
       try {
         const response = await fetch(
-          `https://react-blog-flame-one.vercel.app/listByTopic/${topic}`
+          `http://localhost:5005/listByTopic/${topic}`
         );
         console.log(response);
         if (!response.ok) {

@@ -15,7 +15,7 @@ const ShowArticle = () => {
     const fetchArticleData = async () => {
       try {
         const response = await fetch(
-          `https://react-blog-flame-one.vercel.app/showArticle/${title}`
+          `http://localhost:5005/showArticle/${title}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

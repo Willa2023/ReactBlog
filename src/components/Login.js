@@ -23,19 +23,16 @@ const Login = ({
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "https://react-blog-flame-one.vercel.app/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify({
-            username,
-            password,
-          }),
-        }
-      );
+      const response = await fetch("http://localhost:5003/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify({
+          username,
+          password,
+        }),
+      });
 
       const result = await response.json();
       if (result.code === 200) {

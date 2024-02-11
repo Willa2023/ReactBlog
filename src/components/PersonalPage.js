@@ -13,7 +13,7 @@ const PersonalPage = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          `https://react-blog-flame-one.vercel.app/personalPage/${username}`
+          `http://localhost:5005/personalPage/${username}`
         );
         const result = await response.json();
 
@@ -49,7 +49,7 @@ const PersonalPage = () => {
   const handleDelete = async (articleId) => {
     try {
       const response = await fetch(
-        `https://react-blog-flame-one.vercel.app/deleteArticle/${articleId}`,
+        `http://localhost:5005/deleteArticle/${articleId}`,
         {
           method: "DELETE",
           headers: {
